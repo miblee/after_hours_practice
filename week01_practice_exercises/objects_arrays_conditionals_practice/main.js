@@ -23,8 +23,9 @@ var album1 = {
 
 // 1. Retrieve the string "Sire" from album1, and save it in a sensibly named
 //    variable.
-
+var album1Label = album1.albumDetails.label;
 // 2. Change the title of album1 from "Talking Heads" to "Talking Heads: 77"
+album1.title = "Talking Heads: 77";
 
 var album2 = {
   title: "More Songs About Buildings and Food",
@@ -46,8 +47,9 @@ var album3 = {
 
 // 3. Access album2's formats array and use an array method to add "LP" to
 //    album3's formats
-
+album3.albumDetails.formats.push(album2.albumDetails.formats[0]);
 // 4. Change the release date of album3 from a string into a Date object
+album3.albumDetails.released = new Date(album3.albumDetails.released);
 
 var album4 = {
   title: "Remain in Light",
@@ -58,6 +60,7 @@ var album4 = {
 };
 
 // 5. Add the label "Sire" to album4's details
+album4.albumDetails.label = "Sire";
 
 var album5 = {
   title: "Speaking in Tongues",
@@ -68,6 +71,8 @@ var album5 = {
 };
 
 // 6. Add a 'formats' array to album 5 and add "CD", "Cassette", and "LP"
+
+
 
 var album6 = {
   title: "Little Creatures",
